@@ -1,0 +1,48 @@
+{
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true,
+      "destructuring": true,
+      "spread": true,
+      "experimentalObjectRestSpread": true
+    }
+  },
+  "extends": [
+    "airbnb",
+    "plugin:jest/recommended",
+    "eslint:recommended",
+    "plugin:react/recommended"
+  ],
+  "parser": "babel-eslint",
+  "plugins": [
+    "react",
+    "react-hooks",
+    "jest"],
+  "rules": {
+    "react/jsx-uses-react": "error",
+    "react/jsx-uses-vars": "error",
+    "react-hooks/rules-of-hooks": "error",
+    "camelcase": "off",
+    //    "linebreak-style": [0, "error", "windows"],
+    "indent": ["error", 4],
+    "no-param-reassign": "off",
+    "import/prefer-default-export": "off",
+    "react/jsx-boolean-value" : ["error", "always"],
+    "react/jsx-indent": ["error", 4],
+    "react/jsx-indent-props": ["error", 4],
+    "no-unused-expressions": ["error", {"allowShortCircuit": true}],
+    "arrow-body-style": ["error", "as-needed"],
+    "arrow-parens": ["error", "always"],
+    "no-restricted-syntax": ["error", {
+      "selector": "ExportDefaultDeclaration",
+      "message": "Prefer named exports"
+    }]
+  },
+  "env": {
+    "browser": true,
+    "jest/globals": true
+  }
+}
+
